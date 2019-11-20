@@ -1,0 +1,32 @@
+{% import 'macros.html' as macro %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h3>popular movies </h3>
+    <div>
+      {% for popular_movie in popular %}
+        <p>{{ popular_movie.title }}</p>
+      {% endfor %}
+    </div>
+
+    <h3>upcoming movies </h3>
+    <div>
+      {% for upcoming_movie in upcoming %}
+        <p>{{ upcoming_movie.title }}</p>
+      {% endfor %}
+    </div>
+
+    <h3>now showing movies </h3>
+    <div>
+      {% for now_showing_movie in now_showing %}
+        <p>{{ now_showing_movie.title }}</p>
+      {% endfor %}
+    </div>
+
+  </body>
+</html>
