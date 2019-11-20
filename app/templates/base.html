@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> {{title}} </title>
-  </head>
-  <body>
+{% extends 'bootstrap/base.html' %}
 
-    {% block content %}
+{% block navbar %}
 
+  {% include 'navbar.html' %}
 
-    {% endblock %}
-
-
-
-  </body>
-</html>
+{% endblock %}
