@@ -8,25 +8,13 @@
   </head>
   <body>
     <h3>popular movies </h3>
-    <div>
-      {% for popular_movie in popular %}
-        <p>{{ popular_movie.title }}</p>
-      {% endfor %}
-    </div>
+    <p> {{macro.displayMovieList(popular) }} </p>
 
     <h3>upcoming movies </h3>
-    <div>
-      {% for upcoming_movie in upcoming %}
-        <p>{{ upcoming_movie.title }}</p>
-      {% endfor %}
-    </div>
+    <p> {{macro.displayMovieList(upcoming) }} </p>
 
     <h3>now showing movies </h3>
-    <div>
-      {% for now_showing_movie in now_showing %}
-        <p>{{ now_showing_movie.title }}</p>
-      {% endfor %}
-    </div>
+    <p> {{macro.displayMovieList(now_showing) }} </p>
 
   </body>
 </html>
