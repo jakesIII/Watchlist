@@ -1,3 +1,4 @@
+<!-- displays movie list -->
 {% macro displayMovieList(movie_list) %}
 
   {% for movie in movie_list %}
@@ -10,5 +11,19 @@
    </div>
 
   {% endfor %}
+
+{% endmacro %}
+
+<!-- displays reviews -->
+{% macro displayReviews(review_list) %}
+
+    {% for review in review_list %}
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+        <h2> {{ review.title}} </h2>
+        <p> {{ review.review | truncate(30) }}</p>
+    </div>
+
+    {% endfor %}
 
 {% endmacro %}
